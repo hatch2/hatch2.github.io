@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://hatch2.github.io/"/>
-  <updated>2014-08-17T05:56:50.189Z</updated>
+  <updated>2014-08-17T06:15:05.663Z</updated>
   <id>http://hatch2.github.io/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[hexoセットアップしてみた]]></title>
-    <link href="http://hatch2.github.io/2014/08/16/hexo%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%95%E3%82%9A%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/"/>
-    <id>http://hatch2.github.io/2014/08/16/hexoセットアップしてみた/</id>
+    <link href="http://hatch2.github.io/2014/08/16/hexo-setup/"/>
+    <id>http://hatch2.github.io/2014/08/16/hexo-setup/</id>
     <published>2014-08-15T23:34:24.000Z</published>
-    <updated>2014-08-17T05:51:16.000Z</updated>
+    <updated>2014-08-17T06:13:53.000Z</updated>
     <content type="html"><![CDATA[<p>最近流行ってるらしいhexoという静的ページジェネレータをつかって何もやってなかったGithub PageにBlogを設置してみました。<br>第一印象としてはJekyllのnode版の様な感じで、テンプレートを記述するメタ言語を変更できたり、node moduleをつかって拡張したりできます。</p>
 <h2 id="セットアップ">セットアップ</h2>
 <p>とりあえずnvmやnodebrewを入れてnodeの最新版をインストール(ここは別のサイトを調べていただいて)します。<br>nodeが入ってしまえば3ステップで始められます。</p>
