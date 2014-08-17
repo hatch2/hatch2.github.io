@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>hexoセットアップしてみた | hatch2 gh-page</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="hatch2 gh-page">
+
+  
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      <a class="blog-logo" href="/">
+        
+        <img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo"/></a>
+        
+      </a>
+    </header>
+    <span class="post-meta">
+      <time datetime="2014-08-15T23:34:24.000Z" itemprop="datePublished">Aug 16 2014</time>
+       on <a href='/tags/hexo/' style='margin:0 5px;'>hexo</a><a href='/tags/node/' style='margin:0 5px;'>node</a><a href='/tags/github/' style='margin:0 5px;'>github</a>
+    </span>
+    <h1 class="post-title">hexoセットアップしてみた</h1>
+    <section class="post-content">
+      <p>最近流行ってるらしいhexoという静的ページジェネレータをつかって何もやってなかったGithub PageにBlogを設置してみました。<br>第一印象としてはJekyllのnode版の様な感じで、テンプレートを記述するメタ言語を変更できたり、node moduleをつかって拡張したりできます。</p>
+<h2 id="セットアップ">セットアップ</h2>
+<p>とりあえずnvmやnodebrewを入れてnodeの最新版をインストール(ここは別のサイトを調べていただいて)します。<br>nodeが入ってしまえば3ステップで始められます。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo        <span class="comment"># 1 hexoをインストールします</span></div><div class="line">$ hexo init &lt;プロジェクト名&gt;   <span class="comment"># 2 hexoのプロジェクトフォルダを作成します</span></div><div class="line">$ npm install                <span class="comment"># 3 hexoに必要なnode moduleのインストールをします</span></div></pre></td></tr></table></figure>
+
+<p>以下のサーバを立ち上げてみましょう。<br>ローカル上で実際に公開される記事をプレビューする事ができます。<br>通常の場合は <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> をブラウザで開くと確認できます。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s                     <span class="comment"># hexoのサーバを起動する</span></div></pre></td></tr></table></figure>
+
+<h2 id="プラグインでやりたい事をやれるようにする">プラグインでやりたい事をやれるようにする</h2>
+<p>hexo用のnode moduleを追加する事でsassやcoffeeやjadeなどのメタ言語が利用できるようになります。<br>テンプレートなども変更できるようなので少しずつカスタムしてみようかと思います。<br>以下のページに利用できるテンプレートやnode moduleがリストになっているので使いたいmoduleをpackage.jsonに追加して<code>npm install</code>でインストールする事ができます。</p>
+<ul>
+<li><a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">Plugins · hexojs/hexo Wiki</a></li>
+</ul>
+<h2 id="参考サイト">参考サイト</h2>
+<ul>
+<li><a href="http://liginc.co.jp/web/programming/server/104594" target="_blank" rel="external">所要時間3分!? Github PagesとHEXOで爆速ブログ構築してみよう！ | 株式会社LIG</a></li>
+<li><a href="http://blog.otakumode.com/2014/08/08/Blogging-with-hexoio/" target="_blank" rel="external">チームブログをGitHubとHexoではじめよう！ | Tokyo Otaku Mode Tech Blog</a></li>
+</ul>
+
+    </section>
+      <section id="comment">
+          <h1 class="title">Comments</h1>
+
+          
+      </section>
+    <footer class="post-footer">
+      <section class="author">
+        <h4>hatch2</h4>
+        <p>A designer, developer and entrepreneur. Spends his time travelling the world with a bag of kites. Likes journalism and publishing platforms.</p>
+      </section>
+
+      <section class="share">
+        <h4>Share this post</h4>
+        <a class="icon-twitter" href="http://twitter.com/share?url=http://hatch2.github.io/2014/08/16/hexoセットアップしてみた/"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hatch2.github.io/2014/08/16/hexoセットアップしてみた/"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hatch2.github.io/2014/08/16/hexoセットアップしてみた/"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+        </a>
+      </section>
+    </footer>
+  </article>
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/">hatch2 gh-page</a> &copy; 2014 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+
+
+
+</body>
+</html>
