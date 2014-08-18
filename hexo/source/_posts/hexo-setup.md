@@ -1,9 +1,6 @@
 title: hexoセットアップしてみた
 date: 2014-08-16 08:34:24
-tags:
-- hexo
-- node
-- github
+tags: [hexo, node, github]
 ---
 最近流行ってるらしいhexoという静的ページジェネレータをつかって何もやってなかったGithub PageにBlogを設置してみました。
 第一印象としてはJekyllのnode版の様な感じで、テンプレートを記述するメタ言語を変更できたり、node moduleをつかって拡張したりできます。
